@@ -290,7 +290,7 @@ class DarkdumpGUI:
         self.search_button = Button(master, text="Search", command=self.search)
         self.search_button.pack()
 
-        self.result_text = scrolledtext.ScrolledText(master, width=40, height=10, wrap=WORD)
+        self.result_text = scrolledtext.ScrolledText(master, width=80, height=20, wrap=WORD)
         self.result_text.pack()
 
     def search(self):
