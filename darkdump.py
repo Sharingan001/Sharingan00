@@ -121,7 +121,7 @@ class DarkdumpGUI:
         self.query_entry = Entry(master)
         self.query_entry.pack()
 
-        self.amount_label = Label(master, text="Enter Amount of searches:")
+        self.amount_label = Label(master, text="Enter Amount:")
         self.amount_label.pack()
 
         self.amount_entry = Entry(master)
@@ -134,7 +134,7 @@ class DarkdumpGUI:
         self.search_button = Button(master, text="Search", command=self.search)
         self.search_button.pack()
 
-        self.result_text = scrolledtext.ScrolledText(master, width=80, height=20, wrap=WORD)
+        self.result_text = scrolledtext.ScrolledText(master, width=40, height=10, wrap=WORD)
         self.result_text.pack()
 
     def search(self):
@@ -290,7 +290,7 @@ class DarkdumpGUI:
         self.search_button = Button(master, text="Search", command=self.search)
         self.search_button.pack()
 
-        self.result_text = scrolledtext.ScrolledText(master, width=1200, height=700, wrap=WORD)
+        self.result_text = scrolledtext.ScrolledText(master, width=40, height=10, wrap=WORD)
         self.result_text.pack()
 
     def search(self):
@@ -310,4 +310,3 @@ if __name__ == "__main__":
     root = Tk()
     gui = DarkdumpGUI(root)
     root.mainloop()
-
